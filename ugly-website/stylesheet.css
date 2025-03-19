@@ -1,0 +1,53 @@
+h1 {
+   font-style: oblique;
+   color: green;
+   text-align: center;
+   font-family: fantasy;
+   font-style: italic;
+   border: 5px solid red;
+   border-width: thick;
+   background-color: yellowgreen;
+}
+
+body {
+    background-image: url('pepper line up.png');
+    background-size: auto;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* body img {
+    display: none;
+} */
+
+#intro {
+    font-size: large;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    border-style: double;
+    border-color: aqua;
+}
+
+ul{
+    list-style-position: inside;
+}
+
+li {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: right;
+    font-weight: bolder;
+}
+
+#others {
+    display: flex;
+    align-items: flex-start;
+}
+
+.image {
+    width: 400px;
+    margin-left: -100px;
+    border-style: dotted;
+}
