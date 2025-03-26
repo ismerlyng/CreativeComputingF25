@@ -1,0 +1,75 @@
+
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+body h1{
+    font-size: 40px;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: wrap;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.card-1 {
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #D3D3D3;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+
+}
+
+.card-2 {
+    border-radius: 25px;
+    border-style: solid;
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+
+}
+
+.card-3 {
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #D3D3D3 ;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+
+}
+
+.card-3 h2 {
+    border-style: none;
+    background-color: #ffcccc;
+    padding: 10px;
+
+}
+
+.card-4 {
+    border-radius: 25px;
+    border-style: solid;
+    border-color: blue;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+
+}
+
+.card-4 h2 {
+   color: red;
+}
