@@ -1,0 +1,22 @@
+body {
+    font-family: "Caveat", cursive;
+}
+
+.flex-container {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.intro {
+    border-style: solid;
+    border-color: black;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+
+}
+

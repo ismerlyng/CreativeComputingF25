@@ -1,0 +1,33 @@
+
+
+body {
+    font-family: "Caveat", cursive;
+}
+
+body h1{
+    font-size: 40px;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    height: 500px;
+    gap: 50px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.block {
+    border-style: solid;
+    border-color: red;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+}
+
