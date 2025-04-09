@@ -1,33 +1,33 @@
-
-
 body {
-    font-family: "Caveat", cursive;
-}
-
-body h1{
-    font-size: 40px;
-    max-width: 800px;
-    margin: auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
-
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-size: medium;
 }
 
 .flex-container {
     display: flex;
+    height: 600px;
     justify-content: center;
-    flex-flow: wrap;
-    height: 500px;
-    gap: 50px;
-    max-width: 800px;
-    margin: auto;
+    flex-direction: column;
+    align-items: center;
 }
 
-.block {
+
+.poem {
     border-style: solid;
-    border-color: red;
-    width: 200px;
-    height: 150px;
+    border-color: black;
+    width: 500px;
     padding: 20px;
+
 }
+
+.verse {
+    list-style-type: none;
+    
+}
+
+a:visited {
+    color:blue;
+}
+
 

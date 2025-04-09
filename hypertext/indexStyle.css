@@ -1,5 +1,7 @@
 body {
-    font-family: "Caveat", cursive;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-size: medium;
 }
 
 .flex-container {
@@ -14,9 +16,18 @@ body {
 .intro {
     border-style: solid;
     border-color: black;
-    width: 200px;
-    height: 150px;
+    width: 500px;
+    height: 200px;
     padding: 20px;
 
+}
+
+.verse {
+    list-style-type: none;
+    
+}
+
+a:visited {
+    color:blue;
 }
 
