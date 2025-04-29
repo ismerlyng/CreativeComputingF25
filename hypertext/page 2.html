@@ -7,7 +7,21 @@
     <title>Dusting</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-        </style>
+        body {
+            transition: opacity 1.5s ease-in-out;
+        }
+        
+        body.fade-out {
+            opacity: 0;
+        }
+
+        .home-link {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: small;
+        }
+    </style>
         
 </head>
 <body>
@@ -54,5 +68,20 @@
                     
                 
 </main>
+
+    <div class="home-link">
+        <a href="#" id="return-home">Return to homepage.</a>
+    </div>
+
+    <script>
+        document.getElementById('return-home').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.body.classList.add('fade-out');
+            
+            setTimeout(function() {
+                window.location.href = 'index.html';
+            }, 1500);
+        });
+    </script>
 </body>
 </html>

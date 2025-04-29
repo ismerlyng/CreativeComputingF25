@@ -7,7 +7,21 @@
     <title>Bilingual Sestina</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-        </style>
+        body {
+            transition: opacity 1.5s ease-in-out;
+        }
+        
+        body.fade-out {
+            opacity: 0;
+        }
+
+        .home-link {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: small;
+        }
+    </style>
         
 </head>
 <body>
@@ -19,12 +33,12 @@
             <div class="poem"> 
                
                 <ul class="verse">
-                    <li>Some things I have to say aren’t getting said</li>
+                    <li>Some things I have to say aren't getting said</li>
                     <li>in this snowy, blonde, blue-eyed, gum-chewing English:</li>
-                    <li>dawn’s early light sifting through the <span style="font-style: italic;">persianas</span> closed</li>
+                    <li>dawn's early light sifting through the <span style="font-style: italic;">persianas</span> closed</li>
                     <li>the night before by dark-skinned girls whose words</li>
                     <li>evoke <span style="font-style: italic;">cama</span>, <span style="font-style: italic;">aposento</span>, <span style="font-style: italic;">sueños</span> in <span style="font-style: italic;">nombres</span> </li>
-                    <li>from that first word I can’t translate from Spanish.</li>
+                    <li>from that first word I can't translate from Spanish.</li>
                     <br>
                     <li>Gladys, Rosario, Altagracia— the sounds of Spanish</li>
                     <li>wash over me like warm island waters as I say</li>
@@ -37,7 +51,7 @@
                     <li>when we kids poked them, astonished. Even Spanish</li>
                     <li>failed us when we realized how frail a word is</li>
                     <li>when faced with the thing it names. How saying</li>
-                    <li>saying its name won’t always summon up in Spanish or English</li>
+                    <li>saying its name won't always summon up in Spanish or English</li>
                     <li>the full blown genii from the bottled <span style="font-style: italic;">nombre</span>.</li>
                     <br>
                     <li>Gladys, I summon you back by saying your <span style="font-style: italic;">nombre</span></li>
@@ -78,5 +92,20 @@
                     
                 
 </main>
+
+    <div class="home-link">
+        <a href="#" id="return-home">Return to homepage.</a>
+    </div>
+
+    <script>
+        document.getElementById('return-home').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.body.classList.add('fade-out');
+            
+            setTimeout(function() {
+                window.location.href = 'index.html';
+            }, 1500);
+        });
+    </script>
 </body>
 </html>

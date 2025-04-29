@@ -7,31 +7,48 @@
     <title>My poem links to Julia's</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-        </style>
         
+        body {
+            transition: opacity 1.5s ease-in-out;
+        }
+        
+        body.fade-out {
+            opacity: 0;
+        }
+    </style>
 </head>
 <body>
     <main>
-        
         <div class="flex-container"> 
-
-
-        <div class="intro"> 
-           
-            <ul class="verse">
-                <li> remain <a href="page 2.html">anonymous</a></li>
-                <li> but don't stop being <a href="page 3.html">desirable</a></li>
-                <li> remain <a href="page 4.html">bilingual</a></li>
-                <li> but don't get your words mixed up</li>
-                <br>
-                <li style="font-style: italic;"> -the identity they gave us </li>
-                <li style="font-size: small;"> assisted by the words of Julia Alvarez (Dominican-American poet) in the links</li>
-            </ul>
-        
+            <div class="intro"> 
+                <ul class="verse">
+                    <li> remain <a href="#" id="transition-link">anonymous</a></li>
+                    <li> but don't stop being <a href="#" id="transition-link-2">desirable</a></li>
+                    <li> remain <a href="#" id="transition-link-3">bilingual</a></li>
+                    <li> but don't get your words mixed up</li>
+                    <br>
+                    <li style="font-style: italic;"> -the identity they gave us </li>
+                    <li style="font-size: small;"> assisted by the words of Julia Alvarez (Dominican-American poet) in the links</li>
+                </ul>
+            </div>
         </div>
+    </main>
 
-        </div>
+    <script>
+        function setupTransition(linkId, targetPage) {
+            document.getElementById(linkId).addEventListener('click', function(e) {
+                e.preventDefault();
+                document.body.classList.add('fade-out');
                 
-</main>
+                setTimeout(function() {
+                    window.location.href = targetPage;
+                }, 1500);
+            });
+        }
+
+        setupTransition('transition-link', 'page 2.html');
+        setupTransition('transition-link-2', 'page 3.html');
+        setupTransition('transition-link-3', 'page 4.html');
+    </script>
 </body>
 </html>

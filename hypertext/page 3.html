@@ -7,7 +7,21 @@
     <title>Hairbands</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-        </style>
+        body {
+            transition: opacity 1.5s ease-in-out;
+        }
+        
+        body.fade-out {
+            opacity: 0;
+        }
+
+        .home-link {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: small;
+        }
+    </style>
         
 </head>
 <body>
@@ -26,18 +40,18 @@
                     <li>whose paper petals crumple in the drawer,</li>
                     <li>the flowered crepe, the felt with a rickrack</li>
                     <li>of vines, the twined mock-tortoise shells.</li>
-                    <li>He says I do not need them, I’ve cut my hair,</li>
+                    <li>He says I do not need them, I've cut my hair,</li>
                     <li>so it no longer falls in my eyes when I read,</li>
                     <li>or when we are making love and I bend over him.</li>
                     <br>
                     <li>But no, I tell him, you do not understand,</li>
-                    <li>I want my hairbands even if I don’t need them.</li>
+                    <li>I want my hairbands even if I don't need them.</li>
                     <li>These are the trophies of my maidenhood,</li>
                     <li>the satin dress with buttons down the back,</li>
                     <li>the scented box with the scalloped photographs.</li>
                     <li>This is my wild-haired girlhood dazzled with stories</li>
                     <li>of love, the romantic heroine with the pale, operatic face</li>
-                    <li>who throws herself on the train tracks of men’s arms.</li>
+                    <li>who throws herself on the train tracks of men's arms.</li>
                     <li style="color: red; font-weight: bold;">These are the chastened girl-selves I gave up</span></li>
                     <li style="color: red; font-weight: bold;">to become the woman who could be married to you.</li>
                     <br>
@@ -67,5 +81,20 @@
                     
                 
 </main>
+
+    <div class="home-link">
+        <a href="#" id="return-home">Return to homepage.</a>
+    </div>
+
+    <script>
+        document.getElementById('return-home').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.body.classList.add('fade-out');
+            
+            setTimeout(function() {
+                window.location.href = 'index.html';
+            }, 1500);
+        });
+    </script>
 </body>
 </html>
